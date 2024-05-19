@@ -1,4 +1,3 @@
-import React from 'react';
 import { styled } from 'styled-components';
 import reference from '@tokens/reference';
 
@@ -7,6 +6,6 @@ const EvButton = styled('input')(() => ({
   backgroundColor: reference.light.entriBlue.default,
 }));
 
-export function Input() {
+export default function Input() {
   return <EvButton />;
 }

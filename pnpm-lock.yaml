@@ -53,19 +53,25 @@ importers:
       vite-plugin-dts:
         specifier: ^3.8.3
         version: 3.9.1(@types/node@20.12.12)(rollup@4.17.2)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.12))
-      vite-tsconfig-paths:
-        specifier: ^4.3.2
-        version: 4.3.2(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.12))
     devDependencies:
       '@storybook/cli':
         specifier: ^8.0.8
         version: 8.1.1(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@types/node':
+        specifier: ^20.12.12
+        version: 20.12.12
       storybook-addon-run-script:
         specifier: ^0.1.4
         version: 0.1.4
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
       vite-plugin-lib-inject-css:
         specifier: ^2.0.1
         version: 2.1.1(vite@5.2.11(@types/node@20.12.12))
+      vite-tsconfig-paths:
+        specifier: ^4.3.2
+        version: 4.3.2(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.12))
 
 packages:
 
