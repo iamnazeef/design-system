@@ -19,7 +19,14 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Alias */
+    "baseUrl": ".",
+    "paths": {
+      "@tokens/reference": ["tokens/src/reference/index.ts"],
+      "@tokens/globals": ["tokens/src/globals/index.ts"]
+    }
   },
   "include": ["packages"]
 }
