@@ -1,0 +1,14 @@
+{
+  "name": "design-system",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts"
+  },
+  "devDependencies": {
+    "tsx": "^4.10.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
