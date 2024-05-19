@@ -10,5 +10,8 @@
     "tsx": "^4.10.5",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
+  },
+  "peerDependencies": {
+    "react": "18.2.0"
   }
 }
