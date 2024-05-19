@@ -7,6 +7,7 @@
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "devDependencies": {
+    "@types/react": "^18.3.2",
     "tsx": "^4.10.5",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
