@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "main.ts",
+  "main": "./dist/design-system.js",
+  "types": "./dist/main.d.ts",
   "files": [
     "dist"
   ],
@@ -12,27 +13,26 @@
     "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
+    "styled-components": "^6.1.9",
+    "vite": "^5.2.8"
+  },
+  "devDependencies": {
     "@storybook/addon-essentials": "^8.0.8",
     "@storybook/addon-interactions": "^8.0.8",
     "@storybook/addon-links": "^8.0.8",
     "@storybook/addon-onboarding": "^8.0.8",
     "@storybook/blocks": "^8.0.8",
+    "@storybook/cli": "^8.0.8",
     "@storybook/react": "^8.0.8",
     "@storybook/react-vite": "^8.0.8",
+    "@types/node": "^20.12.12",
     "@types/react": "^18.3.2",
     "@vitejs/plugin-react": "^4.2.1",
     "storybook": "^8.0.8",
-    "styled-components": "^6.1.9",
-    "vite": "^5.2.8",
-    "vite-plugin-dts": "^3.8.3"
-  },
-  "devDependencies": {
-    "@storybook/cli": "^8.0.8",
-    "@types/node": "^20.12.12",
     "storybook-addon-run-script": "^0.1.4",
     "typescript": "^5.4.5",
-    "vite-plugin-lib-inject-css": "^2.0.1",
-    "vite-tsconfig-paths": "^4.3.2"
+    "vite-plugin-dts": "^3.8.3",
+    "vite-plugin-lib-inject-css": "^2.0.1"
   },
   "peerDependencies": {
     "react": "18.2.0",

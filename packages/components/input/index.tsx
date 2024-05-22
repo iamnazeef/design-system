@@ -1,22 +1,14 @@
-import { styled, useTheme } from 'styled-components';
-import reference from '@tokens/reference';
-
-function getColor() {
-  const { theme, themeMode } = useTheme();
-  if (themeMode === 'DARK') {
-    return theme?.dark?.entriBlue?.default || reference.dark.entriBlue.default;
-  } else {
-    return (
-      theme?.light?.entriBlue?.default || reference.light.entriBlue.default
-    );
-  }
-}
+import { styled } from 'styled-components';
 
 const EvButton = styled('input')(() => ({
   outline: 'none',
-  backgroundColor: getColor(),
+  backgroundColor: 'red',
 }));
 
-export default function Input() {
-  return <EvButton />;
+interface IInput extends React.InputHTMLAttributes<HTMLInputElement> {}
+
+const Input = (props: IInput) => {
+  return <EvButton {...props} />;
 }
+
+export default Input

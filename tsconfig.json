@@ -9,25 +9,17 @@
     "jsx": "react-jsx",
     "types": ["vite/client"],
     "declaration": true,
-
-    /* Bundler mode */
+    "declarationMap": true,
+    "emitDeclarationOnly": true,  // Ensure only declarations are emitted
+    "outDir": "./dist",  // Output directory for declarations
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-
-    /* Alias */
-    "baseUrl": ".",
-    "paths": {
-      "@tokens/reference": ["tokens/src/reference/index.ts"],
-      "@tokens/globals": ["tokens/src/globals/index.ts"]
-    }
+    "noFallthroughCasesInSwitch": true
   },
-  "include": ["packages"]
+  "include": ["packages"],
+  "exclude": ["node_modules", "dist"]
 }
